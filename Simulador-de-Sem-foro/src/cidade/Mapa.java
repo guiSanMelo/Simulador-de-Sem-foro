@@ -2,6 +2,6 @@ package cidade;
 
 public class Mapa {
     public void carregarMapa() {
-        System.out.println("Mapa urbano carregado.");
+        //Gerar um grafo com o mapa da cidade
     }
 }

@@ -7,7 +7,7 @@ public class ListaCircular<T> {
 
     public void add (T e){
             No<T> novoNo = new No<T>(e);
-            if (head==null){
+            if (head==null){ //Se tiver vazia, ela faz o novoNo ser cabeça e o rabo,
                 head = novoNo;
                 tail = novoNo;
                 novoNo.prox = head;

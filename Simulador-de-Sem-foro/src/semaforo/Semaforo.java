@@ -18,9 +18,9 @@ public class Semaforo<T> {
 
 
         public Semaforo() {
-            No<T> vermelho = new No<>("VERMELHO");
-            No<T> verde = new No<>("VERDE");
-            No<T> amarelo = new No<>("AMARELO");
+            No<T> vermelho = (No<T>) new No<>("VERMELHO");
+            No<T> verde = (No<T>) new No<>("VERDE");
+            No<T> amarelo = (No<T>) new No<>("AMARELO");
 
             vermelho.prox = verde;
             verde.prox = amarelo;
@@ -83,4 +83,6 @@ public class Semaforo<T> {
         public T getSinalAtual() {
             return (estadoAtual != null) ? estadoAtual.conteudo : null;
         }
+
+
     }

@@ -1,5 +1,7 @@
 package trafego;
 
+import Dijkstra.Dijkstra;
+
 public class Veiculo {
     private String id;
     private String origem;
@@ -9,9 +11,11 @@ public class Veiculo {
         this.id = id;
         this.origem = origem;
         this.destino = destino;
+        Dijkstra.encontrarMenorCaminho();
     }
 
     public String getDestino() {
         return destino;
     }
 }
+

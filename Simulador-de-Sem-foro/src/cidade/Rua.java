@@ -2,6 +2,8 @@ package cidade;
 
 import tads.Fila;
 
+import java.util.Scanner;
+
 public class Rua {
     private Intersecao origem;
     private Intersecao destino;
@@ -19,13 +21,12 @@ public class Rua {
 
     //Aqui a gente guardar os carros gerados antes mandar eles para outra intersecção
     public void receberCarro(){
-        Fila f1 = new Fila();
-        Veiculo v1 = new Veiculo(30, 30);
-        Veiculo v2 = new Veiculo(35, 40);
-        Veiculo v3 = new Veiculo(33, 34);
-        f1.enqueue(v1);
-        f1.enqueue(v2);
-        f1.dequeue(v3);
+        Fila fila = new Fila();
+        int emissao = 0;
+        int consumo = 0;
+
+        Veiculo veiculo = new Veiculo(emissao, consumo);
+        fila.enqueue(veiculo);
     }
 
     //Aqui a gente vai definir de qual nó do gráfico essa aresta vem
